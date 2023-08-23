@@ -14,7 +14,6 @@ class Mock {
         )
     }
 
-
     fun verificarLogin(login : String, senha: String) : Boolean{
 
         for (u : Usuario in bdUsuarios.usuarios){

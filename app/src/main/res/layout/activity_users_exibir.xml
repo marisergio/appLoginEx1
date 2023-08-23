@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".intervaceUsuario.CadastroActivity">
+    tools:context=".intervaceUsuario.UsersExibirActivity">
 
     <LinearLayout
         android:id="@+id/barra_superior"
@@ -32,8 +32,8 @@
             android:layout_height="wrap_content"/>
     </LinearLayout>
 
-    <EditText
-        android:id="@+id/edit_nome_aluno"
+    <TextView
+        android:id="@+id/text_nome_aluno"
         android:layout_margin="16dp"
         app:layout_constraintTop_toBottomOf="@id/barra_superior"
         app:layout_constraintStart_toStartOf="parent"
@@ -42,37 +42,16 @@
         android:hint="NOME"
         android:layout_height="48dp"/>
 
-    <EditText
-        android:id="@+id/edit_login_aluno"
-        android:layout_margin="16dp"
-        app:layout_constraintTop_toBottomOf="@id/edit_nome_aluno"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_width="0dp"
-        android:hint="E-MAIL"
-        android:layout_height="48dp"/>
-
-    <EditText
-        android:id="@+id/edit_senha_aluno"
-        android:layout_margin="16dp"
-        app:layout_constraintTop_toBottomOf="@id/edit_login_aluno"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_width="0dp"
-        android:hint="SENHA"
-        android:layout_height="48dp"/>
-
     <Button
 
-        android:id="@+id/btn_salvar"
+        android:id="@+id/btn_editar"
         android:layout_width="0dp"
         android:layout_margin="20dp"
         android:layout_height="wrap_content"
-        android:text="SALVAR"
+        android:text="ALTERAR"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/edit_senha_aluno" />
-
+        app:layout_constraintTop_toBottomOf="@id/text_nome_aluno" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

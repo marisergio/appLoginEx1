@@ -22,8 +22,11 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
         setContentView(binding.root)
 
+        isLogado()
+
         binding.btnEntrar.setOnClickListener(this)
         binding.textCadastrar.setOnClickListener(this)
+        binding.textListar.setOnClickListener(this)
     }
 
     override fun onClick(view: View) {
@@ -31,6 +34,8 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
             logar()
         }else if(view.id == R.id.text_cadastrar){
             startActivity(Intent(this,CadastroActivity::class.java))
+        }else if(view.id == R.id.text_listar){
+            startActivity(Intent(this,UsersList::class.java))
         }
     }
 
@@ -53,6 +58,12 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
 
     private fun isLogar(login : String, senha : String) : Boolean{
         return login!="" && senha != ""
+    }
+
+    private fun isLogado(){
+        if(AdmDadosUsuario(this).buscar(Constantes.KEY.USER_NAME)!=""){
+            startActivity(Intent(this, MainActivity::class.java))
+        }
     }
 
 }

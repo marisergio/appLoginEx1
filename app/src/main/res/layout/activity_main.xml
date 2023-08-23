@@ -1,18 +1,82 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".intervaceUsuario.MainActivity">
 
+    <!--<LinearLayout
+        android:id="@+id/barra_superior_main"
+        android:orientation="horizontal"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:background="@color/blue_black">
+
+        <TextView
+            android:textColor="@color/white"
+            android:text="TELA INICIAL"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:id="@+id/img_sair"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_logout"/>
+    </LinearLayout> -->
+
+    <RelativeLayout
+        android:id="@+id/barra_superior_main"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="16dp"
+        android:background="@color/blue_black">
+
+        <TextView
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:text="TELA INICIAL"
+            android:textSize="18sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <ImageView
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="16dp"
+            android:id="@+id/img_sair"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_logout"/>
+
+    </RelativeLayout>
+
+
+
+
+
+
     <TextView
-        android:id="@+id/text_mensagem"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="OLÁ,"
-        android:textSize="32dp"/>
+        android:text="Olá!"
+        android:id="@+id/text_mensagem"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="22sp"
+        />
 
-</RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

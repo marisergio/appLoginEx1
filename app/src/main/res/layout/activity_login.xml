@@ -65,4 +65,13 @@
         android:layout_marginTop="16dp"
         android:layout_below="@+id/btn_entrar" />
 
+    <TextView
+        android:id="@+id/text_listar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="USUÁRIOS CADASTRADOS"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_below="@+id/text_cadastrar" />
+
 </RelativeLayout>

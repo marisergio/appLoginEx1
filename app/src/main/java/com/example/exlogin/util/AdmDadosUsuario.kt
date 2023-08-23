@@ -15,7 +15,11 @@ class AdmDadosUsuario(context: Context) {
     }
 
     fun buscar(key : String) : String{
-        return sharedPreferences.getString(Constantes.KEY.USER_NAME,"") ?: ""
+        return sharedPreferences.getString(key,"") ?: ""
+    }
+
+    fun sair(key : String){
+        sharedPreferences.edit().remove(key).apply()
     }
 
 
