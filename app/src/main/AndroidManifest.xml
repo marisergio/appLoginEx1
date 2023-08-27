@@ -19,7 +19,7 @@
             android:name=".intervaceUsuario.UsersExibirActivity"
             android:exported="false" />
         <activity
-            android:name=".intervaceUsuario.UsersList"
+            android:name=".intervaceUsuario.UsersListActivity"
             android:exported="false" />
         <activity
             android:name=".intervaceUsuario.CadastroActivity"

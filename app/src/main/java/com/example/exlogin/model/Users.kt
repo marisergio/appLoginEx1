@@ -1,4 +1,4 @@
-package com.example.exlogin
+package com.example.exlogin.model
 
 data class Users(
     var id : String?,

@@ -6,7 +6,7 @@ import android.view.View
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import com.example.exlogin.R
-import com.example.exlogin.Users
+import com.example.exlogin.model.Users
 import com.example.exlogin.databinding.ActivityCadastroBinding
 import com.example.exlogin.util.EndPoint
 import com.example.exlogin.util.ServerHttp

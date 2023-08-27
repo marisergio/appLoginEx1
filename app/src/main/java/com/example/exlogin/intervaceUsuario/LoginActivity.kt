@@ -35,7 +35,7 @@ class LoginActivity : AppCompatActivity(), View.OnClickListener {
         }else if(view.id == R.id.text_cadastrar){
             startActivity(Intent(this,CadastroActivity::class.java))
         }else if(view.id == R.id.text_listar){
-            startActivity(Intent(this,UsersList::class.java))
+            startActivity(Intent(this,UsersListActivity::class.java))
         }
     }
 
